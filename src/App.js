@@ -599,9 +599,11 @@ const options = {
 };
 
 const topLocations = [
-  { name: "Milano, Italy", value: "Milano/Italy" },
-  { name: "Paris, France", value: "Paris/France" },
-  { name: "Los Angeles, CA", value: "Los Angeles/California" },
+  { name: "Kodaikanal", value: "Kodaikanal" },
+  { name: "Ooty", value: "Ooty" },
+  { name: "Theni", value: "Theni" },
+  { name: "Munnar", value: "Munnar" },
+  
   // add more top locations as needed
 ];
 
@@ -987,7 +989,30 @@ const AITravelPlanner = () => {
               </FormGroup>
             </FormRow>
 
-            <Label htmlFor="transportationType">
+
+            {/* /* my code */ }
+            <label htmlFor="transportationType" class="form-label">
+    Transportation Type
+    {/* <p class="inline-text">
+        (e.g. car, train, bus, etc.)
+    </p> */}
+</label>
+<select
+    id="transportationType"
+    name="transportationType"
+    value={values.transportationType}
+    onChange={handleChange}
+    required
+    class="form-control"
+>
+    <option value="car">Car</option>
+    <option value="train">Train</option>
+    <option value="bus">Bus</option>
+    /*add much content here */
+</select>
+
+
+            {/* <Label htmlFor="transportationType">
               Transportation Type
               <p
                 style={{
@@ -1007,7 +1032,7 @@ const AITravelPlanner = () => {
               value={values.transportationType}
               onChange={handleChange}
               required
-            />
+            /> */}
 
             <Label htmlFor="activityType">
               Activity Type

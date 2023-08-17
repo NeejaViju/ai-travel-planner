@@ -592,8 +592,8 @@ const options = {
   ],
 
   languages: [
-    { value: "ta", label: "தமிழ்", icon: "🇮🇳" },
     { value: "en", label: "English", icon: "🇺🇸" },
+    { value: "ta", label: "தமிழ்", icon: "🇮🇳" },
     { value: "tr", label: "Türkçe", icon: "🇹🇷" },
     { value: "fr", label: "Français", icon: "🇫🇷" },
     { value: "es", label: "Español", icon: "🇪🇸" },
